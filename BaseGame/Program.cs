@@ -94,7 +94,7 @@ namespace BaseGame
         {
             if (e.KeyCode == Keys.Space)
             {
-                if (ball.launched) player.isShooting = true;
+                if (ball.launched && player.hasWeapon) player.isShooting = true;
                 ball.launched = true;
             }
             if (e.KeyCode == Keys.Left) player.isMovingLeft = true;
